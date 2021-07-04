@@ -4,15 +4,24 @@
 
 <h3>사용법</h3>
 
-  1. norm-v3에 맞춰 바꾸고자 하는 파일과 같은 위치에 rewrite 실행파일을 위치시킵니다.
-  2. ./rewrite [파일명] 또는 ./rewrite *.c
+ > 1. norm-v3에 맞춰 바꾸고자 하는 파일과 같은 위치에 rewrite 실행파일을 위치시킵니다.
+ > 2. <code>./rewrite [파일명]</code>또는 <code>./rewrite *.c</code>
+<br>
 
 
-Error: SPACE_REPLACE_TAB(line: n, col: n):Found space when expecting tab
-
-Error: TOO_MANY_TABS_FUNC(line: n, col: n): extra tabs before function name
+1. Error: SPACE_REPLACE_TAB(line: n, col: n):Found space when expecting tab
+2. Error: TOO_MANY_TABS_FUNC(line: n, col: n): extra tabs before function name
 
 위 두 가지 에러를 잡아줍니다.
+
+
+
+
+
+
+
+
+---------------
 
 만든 이유와 과정(쓰는중...): 
 새로운 norm에 맞춰 코드를 하나하나 바꾸다 보니 지루하기도 하고, 이럴 시간에 '새 norm에 맞춰 코드 다시 써주는 프로그램'을 만드는 게 더 재밌겠다는 생각이 들었습니다. 
