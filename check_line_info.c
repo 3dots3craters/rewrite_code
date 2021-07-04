@@ -30,9 +30,13 @@ int	check_line_info(char *line, t_info *info)
 
 int is_var_declaration_line(char *line, int len, t_info *info)
 {
+	int tab_pos;
 	int len2;
+	int len3;
 
 	len2 = len;
+	len3 = len;
+	tab_pos = 0;	
 	if (line[len - 2] == ')')
 	{
 		return (0);
@@ -49,10 +53,18 @@ int is_var_declaration_line(char *line, int len, t_info *info)
 		}
 	}
 	while (--len2 >= 0)
-	{	
-		if (line[len2] == ' ')
+	{
+		if (line[len2] == '\t')
 		{
-			info->var_tab_idx = len2;
+			tab_pos = len2;
+		   	break;	
+		}
+	}
+	while (--len3 >= 0)
+	{	
+		if (line[len3] == ' ' && len3 > len2)
+		{
+			info->var_tab_idx = len3;
 			return (VAR_LINE);
 		}
 	}
