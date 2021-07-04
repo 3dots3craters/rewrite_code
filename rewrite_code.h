@@ -6,7 +6,7 @@
 /*   By: hayelee <hayelee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/03 16:51:30 by hayelee           #+#    #+#             */
-/*   Updated: 2021/07/04 21:11:06 by hayelee          ###   ########.fr       */
+/*   Updated: 2021/07/05 08:47:39 by hayelee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int	ft_strchr_idx(const char *s, int c);
 void init_info(t_info *info);
 int is_func_definition_line(char *line, int len, t_info *info);
 int is_var_declaration_line(char *line, int len, t_info *info);
+void check_argv(int argc, char *argv[]);
 
 
 #endif

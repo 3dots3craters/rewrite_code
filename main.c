@@ -6,7 +6,7 @@
 /*   By: hayelee <hayelee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/03 16:53:44 by hayelee           #+#    #+#             */
-/*   Updated: 2021/07/04 21:36:51 by hayelee          ###   ########.fr       */
+/*   Updated: 2021/07/05 08:47:21 by hayelee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int	main(int argc, char *argv[])
 	int	i;
 
 	i = 1;
+	check_argv(argc, argv);
 	rewrite_file(i, argc, argv, &info);
 	return (0);
 }
@@ -42,7 +43,7 @@ int	open_origin_file(char *filename)
 
 	fd = open(filename, O_RDONLY);
 	if (fd < 0)
-		print_error("OPEN ORIGINAL FILE ERROR");
+		print_error("Error: OPEN ORIGINAL FILE ERROR");
 	return (fd);
 }
 
@@ -52,7 +53,7 @@ int	open_new_file(char *filename)
 
 	fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0644);
 	if (fd < 0)
-		print_error("OPEN NEW FILE ERROR");
+		print_error("Error: OPEN NEW FILE ERROR");
 	return (fd);
 }
 
@@ -75,7 +76,7 @@ int	rewrite_last_file(int num_pr, char *argv[], t_info *info)
 		if (ret_gnl == -1)
 		{
 			free(line);
-			printf("Error: wrong get_next_line\n");
+			printf("Error: WRONG GET_NEXT_LINE\n");
 			close(fd);
 			close(new_fd);
 			exit(1);

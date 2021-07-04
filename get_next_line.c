@@ -6,12 +6,11 @@
 /*   By: hayelee <hayelee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/25 13:58:41 by hayelee           #+#    #+#             */
-/*   Updated: 2021/07/04 12:34:35 by hayelee          ###   ########.fr       */
+/*   Updated: 2021/07/05 08:49:03 by hayelee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-#include <stdio.h>
 
 int	get_next_line(int fd, char **line)
 {
