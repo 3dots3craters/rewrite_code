@@ -8,9 +8,9 @@
 2. ./rewrite [파일명] 또는 ./rewrite *.c 
 
 
-<code>
+
   Error: SPACE_REPLACE_TAB(line: n, col: n):Found space when expecting tab
-  Error: TOO_MANY_TABS_FUNC(line: n, col: n):	extra tabs before function name</code>
+  Error: TOO_MANY_TABS_FUNC(line: n, col: n):	extra tabs before function name
 위 두 가지 에러를 잡아줍니다.
 
 
