@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "memory": "c",
+        "utility": "c",
+        "rewrite_code.h": "c",
+        "stdio.h": "c"
+    }
+}
