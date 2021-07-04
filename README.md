@@ -5,7 +5,7 @@
 <h3>사용법</h3>
 
   1. norm-v3에 맞춰 바꾸고자 하는 파일과 같은 위치에 rewrite 실행파일을 위치시킵니다.
-  2. 2. ./rewrite [파일명] 또는 ./rewrite *.c
+  2. ./rewrite [파일명] 또는 ./rewrite *.c
 
 Error: SPACE_REPLACE_TAB(line: n, col: n):Found space when expecting tab
 Error: TOO_MANY_TABS_FUNC(line: n, col: n): extra tabs before function name 
