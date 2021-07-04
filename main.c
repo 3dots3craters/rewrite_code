@@ -50,7 +50,7 @@ int	open_new_file(char *filename)
 {
 	int	fd;
 
-	fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0755);
+	fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0644);
 	if (fd < 0)
 		print_error("OPEN NEW FILE ERROR");
 	return (fd);
