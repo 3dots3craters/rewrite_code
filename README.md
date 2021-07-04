@@ -4,10 +4,13 @@
 
 <h3>사용법</h3>
 
- 1. norm-v3에 맞춰 바꾸고자 하는 파일과 같은 위치에 rewrite 실행파일을 위치시킵니다.
- 2. <code>./rewrite [파일명]</code>또는 <code>./rewrite *.c</code>
+ 1. rewrite 실행파일의 위치는 어디든 상관없습니다!  
+ 2. <code>./rewrite [파일명]</code> 또는 <code>./rewrite *.c</code>  
+ 3. 그리고 <code>./rewrite ../../42cursus/circle_02/cub3D/check/*.c</code> 이런 식으로 써도 됩니다.
+ 
+ (폴더명만 쓰는 건 안 됩니다! ex) <code>./rewrite ../gnl</code>(X))
 <br>
-
+<br>
 
 > - Error: SPACE_REPLACE_TAB(line: n, col: n):Found space when expecting tab
 > - Error: TOO_MANY_TABS_FUNC(line: n, col: n): extra tabs before function name
