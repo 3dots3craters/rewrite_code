@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   check_argv.c                                       :+:      :+:    :+:   */
+/*   ft_strchr_idx.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hayelee <hayelee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/05 08:40:09 by hayelee           #+#    #+#             */
-/*   Updated: 2021/07/05 08:48:34 by hayelee          ###   ########.fr       */
+/*   Created: 2021/05/13 09:32:53 by hayelee           #+#    #+#             */
+/*   Updated: 2021/07/05 09:15:06 by hayelee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rewrite_code.h"
+#include "../rewrite_code.h"
 
-void check_argv(int argc, char *argv[])
+int	ft_strchr_idx(const char *s, int c)
 {
-    int i;
-    int len;
+	int	i;
 
-    i = 0;
-    len = 0;
-    while (++i < argc)
-    {
-        len = ft_strlen(argv[i]);
-        if (argv[i][len - 1] != 'c' && argv[i][len - 2] != '.')
-        {
-            print_error("Error: WRONG FILE\t\t: Check only c files");
-        }
-    }
+	i = 0;
+	while (42)
+	{
+		if (s[i] == (unsigned char)c && s[i])
+			return (i);
+		if (s[i] == '\0')
+			return (-1);
+		i++;
+	}
 }

@@ -6,11 +6,11 @@
 /*   By: hayelee <hayelee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/03 16:55:07 by hayelee           #+#    #+#             */
-/*   Updated: 2021/07/04 21:22:32 by hayelee          ###   ########.fr       */
+/*   Updated: 2021/07/05 09:15:16 by hayelee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rewrite_code.h"
+#include "../rewrite_code.h"
 
 void	make_new_file(char *line, int err_num, int new_fd, int ret_gnl, t_info *info)
 {

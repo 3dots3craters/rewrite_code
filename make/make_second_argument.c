@@ -6,11 +6,11 @@
 /*   By: hayelee <hayelee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/03 16:54:54 by hayelee           #+#    #+#             */
-/*   Updated: 2021/07/05 08:49:02 by hayelee          ###   ########.fr       */
+/*   Updated: 2021/07/05 09:15:19 by hayelee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rewrite_code.h"
+#include "../rewrite_code.h"
 
 char	**make_second_argument(char *origin, char *new)
 {

@@ -6,7 +6,7 @@
 /*   By: hayelee <hayelee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/03 16:55:20 by hayelee           #+#    #+#             */
-/*   Updated: 2021/07/04 21:53:57 by hayelee          ###   ########.fr       */
+/*   Updated: 2021/07/05 08:58:33 by hayelee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	check_line_info(char *line, t_info *info)
 	if (line[len - 1] == ';')
 		ret = is_var_declaration_line(line, len, info);
 	else if (line[len - 1] == ')')
-		ret = is_func_definition_line(line, len, info);
+		ret = is_func_definition_line(line, info);
 	return (ret);
 }
 
@@ -71,10 +71,9 @@ int is_var_declaration_line(char *line, int len, t_info *info)
 	return (0);
 }
 
-int is_func_definition_line(char *line, int len, t_info *info)
+int is_func_definition_line(char *line, t_info *info)
 {
 	int pos;
-	int sign;
 
 	if (line[0] == '\t' || line[0] == ' ')
 		return (0);
