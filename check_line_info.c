@@ -37,18 +37,10 @@ int is_var_declaration_line(char *line, int len, t_info *info)
 	len2 = len;
 	len3 = len;
 	tab_pos = 0;	
-	if (line[len - 2] == ')')
+	if (line[len - 2] == ')' || line[len - 2] == ' ')
 	{
 		return (0);
 	}
-	if (line[len - 2] == ' ' && line[len - 3] == 'n' && line[len - 4] == 'r'
-		&& line[len - 5] == 'u' && line[len - 6] == 't' && line[len - 7] == 'e'
-		&& line[len - 8] == 'r' && line[len - 9] == '\t')
-		return (0);
-	if (line[len - 2] == ' ' && line[len - 3] == 'k' && line[len - 4] == 'a'
-			&& line[len - 5] == 'e' && line[len - 6] == 'r'
-			&& line[len - 7] == 'b' && line[len - 8] == '\t')
-		return (0);
 	while (--len >= 0)
 	{
 		if (line[len] == '=' || line[len] == '+' || line[len] == '-')
