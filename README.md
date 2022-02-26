@@ -1,6 +1,14 @@
 <h4>[rewrite_code: norm-v3에 맞게 기존 코드를 개선합니다]</h4>
 <h1>주의!!기존 norm-v2에 맞게 쓰여진 코드만을 대상으로 합니다!!(.c 파일만!!)</h1>
 
+
+
+https://user-images.githubusercontent.com/66169740/155844899-2318f712-ad82-4ace-9693-e2c9f5ca315e.mov
+
+
+
+
+
 <h3>사용법</h3>
 
  1. rewrite 실행파일의 위치는 어디든 상관없습니다!  
