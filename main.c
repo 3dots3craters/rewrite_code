@@ -6,7 +6,7 @@
 /*   By: hayelee <hayelee@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/03 16:53:44 by hayelee           #+#    #+#             */
-/*   Updated: 2022/02/26 15:35:34 by hayelee          ###   ########.fr       */
+/*   Updated: 2022/02/26 22:14:33 by hayelee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int main(int argc, char *argv[])
 	i = 1;
 	check_argv(argc, argv);
 	rewrite_file(i, argc, argv, &info);
-	printf("\nRewrite files success!!\n\n");
 	return (0);
 }
 
